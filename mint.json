@@ -1,0 +1,172 @@
+{
+  "$schema": "C:/Users/Samuel/Desktop/Documentation/mintlify/starter-main/api-reference/openapi.json",
+  "name": "NLPearl Documentation",
+  "logo": {
+    "dark": "/logo/logo_favicon.png",
+    "light": "/logo/logo_favicon.png"
+  },
+  "favicon": "/logo/logo_favicon.png",
+  "colors": {
+    "primary": "#5C57F4",
+    "light": "#F7F7F7",
+    "dark": "#5C57F4",
+    "anchors": {
+      "from": "#FAADFF",
+      "to": "#5C57F4"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Support",
+      "url": "support@nlpearl.ai"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Plateform",
+    "url": "https://platform.nlpearl.ai/"
+  },
+  "tabs": [
+    {
+      "name": "API Reference",
+      "url": "api-reference"
+    }
+  ],
+  "anchors": [
+    {
+      "name": "WebSite",
+      "icon": "globe",
+      "url": "https://nlpearl.ai/"
+    },
+    {
+      "name": "API References",
+      "icon": "terminal",
+      "url": "api-reference"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "",
+      "pages": [
+        "pages/introduction"
+      ]
+    },
+    {
+      "group": "General",
+      "pages": [
+        "pages/overview",
+        "pages/getting_started"
+      ]
+    },
+    {
+      "group": "Pearl",
+      "pages": [
+        "pages/create_pearl",
+        "pages/languages",
+        "pages/action",
+        "pages/calls"
+      ]
+    },
+    {
+      "group": "Activities",
+      "pages": [
+        "pages/inbound",
+        "pages/campaign",
+        "pages/outbound"
+      ]
+    },
+    {
+      "group": "More Features",
+      "pages": [
+        "pages/agents",
+        "pages/phone_numbers",
+        "pages/phone_number_reg",
+        "pages/billing"
+      ]
+    },
+    {
+      "group": "",
+      "pages": [
+        "api-reference/api_quickstart"
+      ]
+    },
+    {
+      "group": "Campaign",
+      "pages": [
+        "api-reference/campaign/get-campaigns",
+        "api-reference/campaign/get-a-specific-campaign",
+        "api-reference/campaign/set-active-state-for-a-campaign",
+        "api-reference/campaign/get-campaign-call-history",
+        "api-reference/campaign/get-calls-by-dates-for-a-campaign",
+        "api-reference/campaign/get-campaign-leads",
+        "api-reference/campaign/add-a-lead-to-a-campaign",
+        "api-reference/campaign/get-specific-campaign-lead",
+        "api-reference/campaign/set-status-for-a-campaign-lead"
+      ]
+    },
+    {
+      "group": "Client",
+      "pages": [
+        "api-reference/client/get-credit-balance"
+      ]
+    },
+    {
+      "group": "ClientPhoneNumber",
+      "pages": [
+        "api-reference/clientphonenumber/get-active-phone-numbers"
+      ]
+    },
+    {
+      "group": "ConversationFlow",
+      "pages": [
+        "api-reference/conversationflow/get-pearls",
+        "api-reference/conversationflow/get-specific-pearl"
+      ]
+    },
+    {
+      "group": "Inbound",
+      "pages": [
+        "api-reference/inbound/get-inbounds",
+        "api-reference/inbound/get-specific-inbound",
+        "api-reference/inbound/set-active-state-for-inbound",
+        "api-reference/inbound/get-inbounds-call-history",
+        "api-reference/inbound/get-calls-by-dates-for-inbound"
+      ]
+    },
+    {
+      "group": "Invoice",
+      "pages": [
+        "api-reference/invoice/get-all-invoices"
+      ]
+    },
+    {
+      "group": "Outbound",
+      "pages": [
+        "api-reference/outbound/get-all-outbound-views",
+        "api-reference/outbound/add-outbound-activity",
+        "api-reference/outbound/get-specific-outbound",
+        "api-reference/outbound/update-outbound-activity",
+        "api-reference/outbound/get-outbound-call-history-by-dates",
+        "api-reference/outbound/set-active-state-for-outbound",
+        "api-reference/outbound/make-outbound-call"
+      ]
+    },
+    {
+      "group": "Status",
+      "pages": [
+        "api-reference/status/get-status"
+      ]
+    },
+    {
+      "group": "Voices",
+      "pages": [
+        "api-reference/voices/get-all-voices"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "x": "https://x.com/NLPearlai",
+    "linkedin": "https://www.linkedin.com/company/nlpearl/mycompany/",
+    "youtube": "https://www.youtube.com/@NLPearl",
+    "instagram": "https://www.instagram.com/nlpearl/"
+  }
+}
