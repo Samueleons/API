@@ -62,6 +62,7 @@
       "pages": [
         "pages/create_pearl",
         "pages/languages",
+        "pages/action",
         "pages/calls"
       ]
     },
