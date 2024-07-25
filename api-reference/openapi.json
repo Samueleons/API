@@ -83,7 +83,7 @@
           {
             "name": "campaignId",
             "in": "path",
-            "description": "The unique identifier of the campaign.\\n\\nRetreive it in [Get Campaigns](get-campaigns)",
+            "description": "The unique identifier of the campaign.\n\nRetreive it in [Get Campaigns](get-campaigns)",
             "required": true,
             "schema": {
               "type": "string"
