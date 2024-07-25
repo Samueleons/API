@@ -178,17 +178,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "type": "boolean"
+                  "$ref": "#/components/schemas/eActivityStatus"
                 }
               },
               "application/json": {
                 "schema": {
-                  "type": "boolean"
+                  "$ref": "#/components/schemas/eActivityStatus"
                 }
               },
               "text/json": {
                 "schema": {
-                  "type": "boolean"
+                  "$ref": "#/components/schemas/eActivityStatus"
                 }
               }
             }
@@ -771,128 +771,6 @@
                   "items": {
                     "$ref": "#/components/schemas/ClientPhoneNumberView"
                   }
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Error occurred during the retrieval process.",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/ValidationProblemDetails"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ValidationProblemDetails"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ValidationProblemDetails"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/ConversationFlow": {
-      "get": {
-        "tags": [
-          "ConversationFlow"
-        ],
-        "summary": "Get Pearls",
-        "description": "Retrieves all Pearls Created",
-        "responses": {
-          "200": {
-            "description": "List of all Pearls for the client.",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/ConversationFlowView"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/ConversationFlowView"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/ConversationFlowView"
-                  }
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Error occurred during the retrieval process.",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/ValidationProblemDetails"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ValidationProblemDetails"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ValidationProblemDetails"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/ConversationFlow/{conversationFlowId}": {
-      "get": {
-        "tags": [
-          "ConversationFlow"
-        ],
-        "summary": "Get Specific Pearl",
-        "description": "Retrieves a specific Pearl",
-        "parameters": [
-          {
-            "name": "conversationFlowId",
-            "in": "path",
-            "description": "The unique identifier of the Conversation Flow.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Detailed view of a specific Pearl.",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/ConversationFlowView"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ConversationFlowView"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ConversationFlowView"
                 }
               }
             }
@@ -1854,6 +1732,128 @@
         }
       }
     },
+    "/Pearl": {
+      "get": {
+        "tags": [
+          "Pearl"
+        ],
+        "summary": "Get Pearls",
+        "description": "Retrieves all Pearls Created",
+        "responses": {
+          "200": {
+            "description": "List of all Pearls for the client.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ConversationFlowView"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ConversationFlowView"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ConversationFlowView"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error occurred during the retrieval process.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Pearl/{conversationFlowId}": {
+      "get": {
+        "tags": [
+          "Pearl"
+        ],
+        "summary": "Get Specific Pearl",
+        "description": "Retrieves a specific Pearl",
+        "parameters": [
+          {
+            "name": "conversationFlowId",
+            "in": "path",
+            "description": "The unique identifier of the Conversation Flow.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Detailed view of a specific Pearl.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConversationFlowView"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConversationFlowView"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConversationFlowView"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error occurred during the retrieval process.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/Status": {
       "get": {
         "tags": [
@@ -1942,7 +1942,7 @@
             "description": "The name of the outbound activity.",
             "nullable": true
           },
-          "conversationFlowId": {
+          "pearlId": {
             "type": "string",
             "description": "The identifier of the conversation flow associated with the outbound activity.",
             "nullable": true
@@ -2226,12 +2226,12 @@
             "description": "The name associated with the phone number used in the campaign.",
             "nullable": true
           },
-          "conversationFlowId": {
+          "pearlId": {
             "type": "string",
             "description": "The unique identifier for the Pearl used in the campaign.",
             "nullable": true
           },
-          "conversationFlowName": {
+          "pearlName": {
             "type": "string",
             "description": "The name of the Pearl used in the campaign.",
             "nullable": true
@@ -2459,9 +2459,14 @@
             "description": "The name of the inbound client or campaign.",
             "nullable": true
           },
-          "conversationFlowId": {
+          "pearlId": {
             "type": "string",
             "description": "The identifier of the conversation flow used by the inbound client.",
+            "nullable": true
+          },
+          "pearlName": {
+            "type": "string",
+            "description": "The name of the conversation flow used by the inbound client.",
             "nullable": true
           },
           "totalAgents": {
@@ -2517,11 +2522,6 @@
           "agentName": {
             "type": "string",
             "description": "The name of the agent or representative primarily responsible for the inbound client.",
-            "nullable": true
-          },
-          "conversationFlowName": {
-            "type": "string",
-            "description": "The name of the conversation flow used by the inbound client.",
             "nullable": true
           },
           "phoneNumberName": {
@@ -2748,7 +2748,7 @@
             "description": "The name of the outbound client or campaign.",
             "nullable": true
           },
-          "conversationFlowId": {
+          "pearlId": {
             "type": "string",
             "description": "The identifier of the conversation flow used by the outbound client.",
             "nullable": true
@@ -2946,14 +2946,11 @@
       "eCallType": {
         "enum": [
           1,
-          2,
           3,
-          4,
-          5,
-          99
+          4
         ],
         "type": "integer",
-        "description": "\n\n`1 - Campaign`\n\n`3 - Inbound`\n\n`4 - Outbound`",
+        "description": "\n\n`1 - Campaign`\n\n`3 - Inbound`\n\n`4 - Outbound`\n\n",
         "format": "int32"
       },
       "eChatMessageRoleView": {
