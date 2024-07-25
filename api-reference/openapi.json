@@ -83,7 +83,7 @@
           {
             "name": "campaignId",
             "in": "path",
-            "description": "The unique identifier of the campaign.\n\nRetreive it in [Get Campaigns](api-reference/campaign/get-campaigns)",
+            "description": "The unique identifier of the campaign.\\n\\nRetreive it in [Get Campaigns](get-campaigns)",
             "required": true,
             "schema": {
               "type": "string"
@@ -1792,7 +1792,7 @@
         }
       }
     },
-    "/Pearl/{conversationFlowId}": {
+    "/Pearl/{pearlId}": {
       "get": {
         "tags": [
           "Pearl"
@@ -1801,9 +1801,8 @@
         "description": "Retrieves a specific Pearl",
         "parameters": [
           {
-            "name": "conversationFlowId",
+            "name": "pearlId",
             "in": "path",
-            "description": "The unique identifier of the Conversation Flow.",
             "required": true,
             "schema": {
               "type": "string"
@@ -2218,7 +2217,7 @@
           },
           "phoneNumberId": {
             "type": "string",
-            "description": "The unique identifier of the phone number used in the campaign.\n\nIf null, the campaign uses the default phone number of the region.\n\nSee [Phone Numbers Page](pages/phone_numbers) for more details.",
+            "description": "The unique identifier of the phone number used in the campaign.\n\nIf null, the campaign uses the default phone number of the region.\n\nSee [Phone Numbers Page](../../pages/phone_numbers) for more details.",
             "nullable": true
           },
           "phoneNumberName": {
@@ -2946,11 +2945,14 @@
       "eCallType": {
         "enum": [
           1,
+          2,
           3,
-          4
+          4,
+          5,
+          99
         ],
         "type": "integer",
-        "description": "\n\n`1 - Campaign`\n\n`3 - Inbound`\n\n`4 - Outbound`\n\n",
+        "description": "\n\n`1 - Campaign`\n\n`2 - OnDemand`\n\n`3 - Inbound`\n\n`4 - Outbound`\n\n`5 - ConversationFlow`\n\n`99 - PhoneSim`\n\n",
         "format": "int32"
       },
       "eChatMessageRoleView": {
@@ -2972,7 +2974,7 @@
           972
         ],
         "type": "integer",
-        "description": "\n\n`1 - UnitedStates`\n\n`2 - UnitedKingdom`\n\n`33 - Canada`\n\n`44 - Australia`\n\n`61 - Israel`\n\n`972 - France`\n\n",
+        "description": "\n\n`1 - UnitedStates`\n\n`2 - Canada`\n\n`33 - France`\n\n`44 - UnitedKingdom`\n\n`61 - Australia`\n\n`972 - Israel`\n\n",
         "format": "int32"
       },
       "eLanguage": {
