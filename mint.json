@@ -1,5 +1,5 @@
 {
-  "$schema": "C:/Users/Samuel/Desktop/Documentation/mintlify/starter-main/api-reference/openapi.json",
+  "$schema": "C:/Users/Samuel/Desktop/Documentation/mintlify/Master2 - Copy/api-reference/openapi.json",
   "name": "NLPearl Documentation",
   "logo": {
     "dark": "/logo/logo_favicon.png",
@@ -90,78 +90,66 @@
       ]
     },
     {
-      "group": "Campaign",
-      "pages": [
-        "api-reference/campaign/get-campaigns",
-        "api-reference/campaign/get-a-specific-campaign",
-        "api-reference/campaign/set-active-state-for-a-campaign",
-        "api-reference/campaign/get-campaign-call-history",
-        "api-reference/campaign/get-calls-by-dates-for-a-campaign",
-        "api-reference/campaign/get-campaign-leads",
-        "api-reference/campaign/add-a-lead-to-a-campaign",
-        "api-reference/campaign/get-specific-campaign-lead",
-        "api-reference/campaign/set-status-for-a-campaign-lead"
-      ]
-    },
+    "group": "Pearl",
+    "pages": [
+      "api-reference/pearl/get-pearls",
+      "api-reference/pearl/get-specific-pearl"
+    ]
+  },
     {
-      "group": "Client",
-      "pages": [
-        "api-reference/client/get-credit-balance"
-      ]
-    },
+    "group": "Inbound",
+    "pages": [
+      "api-reference/inbound/get-inbounds",
+      "api-reference/inbound/get-specific-inbound",
+      "api-reference/inbound/set-active-state-for-inbound",
+      "api-reference/inbound/get-inbounds-call-history",
+      "api-reference/inbound/get-calls-by-dates-for-inbound"
+    ]
+  },
     {
-      "group": "ClientPhoneNumber",
-      "pages": [
-        "api-reference/clientphonenumber/get-active-phone-numbers"
-      ]
-    },
+    "group": "Outbound",
+    "pages": [
+      "api-reference/outbound/get-outbounds",
+      "api-reference/outbound/get-a-specific-outbound",
+      "api-reference/outbound/set-active-state-for-a-outbound",
+      "api-reference/outbound/get-outbound-call-history",
+      "api-reference/outbound/get-calls-by-dates-for-a-outbound",
+      "api-reference/outbound/get-outbound-leads",
+      "api-reference/outbound/add-a-lead-to-an-outbound",
+      "api-reference/outbound/get-specific-outbound-lead",
+      "api-reference/outbound/set-status-for-a-outbound-lead"
+    ]
+  },
     {
-      "group": "ConversationFlow",
-      "pages": [
-        "api-reference/conversationflow/get-pearls",
-        "api-reference/conversationflow/get-specific-pearl"
-      ]
-    },
+    "group": "Voices",
+    "pages": [
+      "api-reference/voices/get-all-voices"
+    ]
+  },
     {
-      "group": "Inbound",
-      "pages": [
-        "api-reference/inbound/get-inbounds",
-        "api-reference/inbound/get-specific-inbound",
-        "api-reference/inbound/set-active-state-for-inbound",
-        "api-reference/inbound/get-inbounds-call-history",
-        "api-reference/inbound/get-calls-by-dates-for-inbound"
-      ]
-    },
+    "group": "ClientPhoneNumber",
+    "pages": [
+      "api-reference/clientphonenumber/get-active-phone-numbers"
+    ]
+  },
     {
-      "group": "Invoice",
-      "pages": [
-        "api-reference/invoice/get-all-invoices"
-      ]
-    },
-    {
-      "group": "Outbound",
-      "pages": [
-        "api-reference/outbound/get-all-outbound-views",
-        "api-reference/outbound/add-outbound-activity",
-        "api-reference/outbound/get-specific-outbound",
-        "api-reference/outbound/update-outbound-activity",
-        "api-reference/outbound/get-outbound-call-history-by-dates",
-        "api-reference/outbound/set-active-state-for-outbound",
-        "api-reference/outbound/make-outbound-call"
-      ]
-    },
-    {
-      "group": "Status",
-      "pages": [
-        "api-reference/status/get-status"
-      ]
-    },
-    {
-      "group": "Voices",
-      "pages": [
-        "api-reference/voices/get-all-voices"
-      ]
-    }
+    "group": "Client",
+    "pages": [
+      "api-reference/client/get-credit-balance"
+    ]
+  },
+  {
+    "group": "Invoice",
+    "pages": [
+      "api-reference/invoice/get-all-invoices"
+    ]
+  },
+  {
+    "group": "Status",
+    "pages": [
+      "api-reference/status/get-status"
+    ]
+  }
   ],
   "footerSocials": {
     "x": "https://x.com/NLPearlai",
