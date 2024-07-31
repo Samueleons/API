@@ -1,5 +1,5 @@
 {
-  "$schema": "C:/Users/Samuel/Desktop/Documentation/mintlify/Master2 - Copy/api-reference/openapi.json",
+  "$schema": "C:/Users/Samuel/Desktop/Documentation/mintlify/Doc 31-7/api-reference/openapi.json",
   "name": "NLPearl Documentation",
   "logo": {
     "dark": "/logo/logo_favicon.png",
@@ -18,7 +18,7 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "support@nlpearl.ai"
+      "url": "mailto:support@nlpearl.ai"
     }
   ],
   "topbarCtaButton": {
@@ -61,6 +61,7 @@
       "group": "Pearl",
       "pages": [
         "pages/create_pearl",
+        "pages/custom_pearl",
         "pages/languages",
         "pages/action",
         "pages/calls"
@@ -70,8 +71,8 @@
       "group": "Activities",
       "pages": [
         "pages/inbound",
-        "pages/campaign",
-        "pages/outbound"
+        "pages/outbound",
+        "pages/outbound_api"
       ]
     },
     {
@@ -90,13 +91,20 @@
       ]
     },
     {
+    "group": "Client",
+    "pages": [
+      "api-reference/client/get-credit-balance"
+    ]
+  },
+    {
     "group": "Pearl",
     "pages": [
       "api-reference/pearl/get-pearls",
       "api-reference/pearl/get-specific-pearl"
     ]
   },
-    {
+
+  {
     "group": "Inbound",
     "pages": [
       "api-reference/inbound/get-inbounds",
@@ -106,7 +114,7 @@
       "api-reference/inbound/get-calls-by-dates-for-inbound"
     ]
   },
-    {
+  {
     "group": "Outbound",
     "pages": [
       "api-reference/outbound/get-outbounds",
@@ -120,31 +128,26 @@
       "api-reference/outbound/set-status-for-a-outbound-lead"
     ]
   },
-    {
-    "group": "Voices",
-    "pages": [
-      "api-reference/voices/get-all-voices"
-    ]
-  },
-    {
+  {
     "group": "ClientPhoneNumber",
     "pages": [
       "api-reference/clientphonenumber/get-active-phone-numbers"
     ]
   },
+
     {
-    "group": "Client",
-    "pages": [
-      "api-reference/client/get-credit-balance"
-    ]
-  },
-  {
     "group": "Invoice",
     "pages": [
       "api-reference/invoice/get-all-invoices"
     ]
   },
   {
+    "group": "Voices",
+    "pages": [
+      "api-reference/voices/get-all-voices"
+    ]
+  },
+    {
     "group": "Status",
     "pages": [
       "api-reference/status/get-status"

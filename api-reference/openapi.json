@@ -1282,6 +1282,7 @@
           {
             "name": "pearlId",
             "in": "path",
+            "description": "The unique identifier of the Pearl.",
             "required": true,
             "schema": {
               "type": "string"
@@ -1807,22 +1808,22 @@
         "properties": {
           "id": {
             "type": "string",
-            "description": "The unique identifier for the conversation flow.",
+            "description": "The unique identifier for the Pearl.",
             "nullable": true
           },
           "name": {
             "type": "string",
-            "description": "The name of the conversation flow.",
+            "description": "The name of the Pearl.",
             "nullable": true
           },
           "voiceId": {
             "type": "string",
-            "description": "The unique identifier of the voice used in the conversation.",
+            "description": "The unique identifier of the voice used in this Pearl.",
             "nullable": true
           },
           "voiceName": {
             "type": "string",
-            "description": "The name of the voice used in the conversation.",
+            "description": "The name of the voice used in this Pearl.",
             "nullable": true
           },
           "agentPersonalityId": {
@@ -1837,20 +1838,20 @@
           },
           "agentName": {
             "type": "string",
-            "description": "The name of the agent involved in the conversation.",
+            "description": "The name of the agent involved in this Pearl.",
             "nullable": true
           },
           "language": {
             "$ref": "#/components/schemas/eLanguage"
           },
-          "totalCampaigns": {
+          "totalOutbounds": {
             "type": "integer",
-            "description": "The total number of campaigns associated with this conversation.",
+            "description": "The total number of outbounds associated with this Pearl.",
             "format": "int32"
           },
           "totalInbound": {
             "type": "integer",
-            "description": "The total number of inbound calls associated with this conversation.",
+            "description": "The total number of inbound calls associated with this Pearl.",
             "format": "int32"
           }
         },
@@ -1897,17 +1898,17 @@
           },
           "name": {
             "type": "string",
-            "description": "The name of the inbound client or campaign.",
+            "description": "The name of the Inbound.",
             "nullable": true
           },
           "pearlId": {
             "type": "string",
-            "description": "The identifier of the conversation flow used by the inbound client.",
+            "description": "The identifier of the Pearl used by the inbound client.",
             "nullable": true
           },
           "pearlName": {
             "type": "string",
-            "description": "The name of the conversation flow used by the inbound client.",
+            "description": "The name of the Pearl used by the inbound client.",
             "nullable": true
           },
           "totalAgents": {

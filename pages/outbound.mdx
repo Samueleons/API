@@ -1,70 +1,74 @@
 ---
-title: Outbound/API
-description: 'Discover how to leverage the API for dynamic outbound activities, offering direct control over call operations and lead management.'
+title: Outbound
+description: 'Learn how to set up and manage Outbound Campaigns using NLPearl.AI to handle outbound calls effectively.'
 ---
 
 import { CardGroup, Card } from '@theme';
 
-## API-Driven Outbound Activities
+## Setting Up Outbound Campaigns
 
-NLPearl.AI's API provides a powerful interface for developers to create and manage outbound call activities directly through code, offering complete control over the implementation and execution of these interactions.
+NLPearl.AI provides robust features to manage outbound campaigns efficiently. Using the Pearl flows you have created, you can set up outbound calls to engage with your leads according to a predefined schedule.
 
-<img
-  className="block"
-  src="/images/api_outbound.png"
-  alt="API Outbound Setup"
-/>
 
-### Overview of API-Driven Outbound Activities
 
-Unlike platform-managed campaigns, API-driven activities allow for direct integration into your existing systems and workflows. This setup enables a more dynamic application of outbound call logic tailored to specific business needs, where calls can be triggered based on custom criteria defined within your application.
+### What are Outbound ?
 
-### Setting Up API Outbound Activities
+Outbound Campaigns enable your AI agents to make outgoing calls to a list of leads. These calls follow the conversational logic defined in your Pearl, ensuring consistent and effective communication with your potential clients.
 
-1. **Obtain an API Key**: Secure an API key from NLPearl.AI to authenticate and interact with our outbound call API.
+### Steps to Create an Outbound Campaign
 
-2. **Create an Outbound Activity**: Use the API to define and initiate an outbound activity, setting parameters such as call logic, timing, and handling instructions programmatically.
+1. **Create a Pearl**: Ensure you have created a Pearl that defines the flow of the conversation for your outbound calls.
 
-3. **Manage Leads Programmatically**: Integrate your existing lead management systems directly with the outbound activity. There is no need to upload leads to the platform; instead, use your databases to manage and utilize leads dynamically.
+2. **Add Leads**: Add the leads you want to contact directly from the platform. You can input lead details such as name, phone number, and any other relevant information.
 
-### Configuring Your Outbound Calls
+3. **Schedule Calls**: Define the schedule for when the AI agents will make the outbound calls. You can specify dates, times, and frequency to suit your campaign needs.
 
-Configure your outbound calls with extensive customization options available through the API:
+3. **Configure Outbound Settings**: Set up your outbound parameters, such as:
+   - **Number of Agents**: Specify the number of agents that will handle calls simultaneously.
+   - **Default TimeZone**: The default timezone will be the timezone of all the leads you enter if you don't specify their timezone.
+   - **Affect a Phone Number**: Outbound activities do not require you to assign a specific phone number, but it can be done. If you do not assign a phone number, the default NLPearl phone number will be used for calls.
 
-- **Define Call Logic**: Specify the conditions under which calls should be initiated, paused, or terminated based on real-time data.
-- **Customize Voice and Language Settings**: Programmatically set voice attributes and language to align with the specific context or customer segment.
-- **Schedule and Trigger Calls**: Schedule calls or trigger them instantly based on application logic or customer interactions.
-
-### API Endpoints for Outbound Calls
-
-Detailed documentation of API endpoints includes:
-
-- **POST `/outbound/create`**: Endpoint to create a new outbound activity.
-- **PUT `/outbound/update`**: Endpoint to update existing outbound settings.
-- **DELETE `/outbound/{id}`**: Endpoint to delete an outbound activity.
-
-<div className="api-endpoints-info">
-  <h3>Comprehensive API Reference:</h3>
-  <p>For complete details on each endpoint, including parameters and expected responses, refer to our API reference section.</p>
-</div>
 
 <CardGroup cols={2}>
   <Card
-    title="API Authentication"
-    icon="key"
-    href="/docs/api-authentication"
+    title="Agents"
+    icon="users"
+    href="/pages/agents"
   >
-    Learn how to obtain and manage your API key for secure API access.
+    Understand how to manage your agents, including adding and configuring agents for your inbound and outbound activities.
   </Card>
   <Card
-    title="Advanced API Usage"
-    icon="code"
-    href="/docs/advanced-api-usage"
+    title="Phone Numbers"
+    icon="phone"
+    href="/pages/phone_numbers"
   >
-    Explore advanced techniques for integrating outbound API functionalities into your systems.
+    Learn how to purchase and manage phone numbers, and configure them for your NLPearl.AI activities.
+  </Card>
+</CardGroup>
+### Managing Your Outbound Campaigns
+
+Once your campaign is set up, NLPearl.AI handles the outbound calls autonomously, following the Pearl flow you created. The platform allows you to monitor the progress and performance of your campaigns in real-time.
+
+<div className="campaign-management-info">
+  <h3>Campaign Management Features:</h3>
+  <p>Track the status of your outbound calls, view detailed reports on call outcomes, and adjust your campaign settings as needed to optimize performance.</p>
+</div>
+
+### Using the API for Outbound Campaigns
+
+You can also handle your outbound campaigns using the NLPearl.AI API. This allows for more dynamic and flexible management of calling leads. For detailed information, refer to the [Outbound/API](api-reference/outbound/get-outbounds) documentation.
+
+<CardGroup cols={1}>
+  <Card
+    title="Outbound API"
+    icon="network-wired"
+    href="/pages/outbound_api"
+  >
+    Learn how to manage your outbound campaigns using the API for dynamic and flexible lead calling.
   </Card>
 </CardGroup>
 
 ## Conclusion
 
-API-driven Outbound Activities empower you to seamlessly integrate advanced call operations into your applications, ensuring that outbound communications are both flexible and precisely aligned with your operational strategies. Harness the full potential of NLPearl.AI's API for tailored, real-time customer engagement.
+Setting up Outbound Campaigns in NLPearl.AI allows your business to manage outgoing calls efficiently, leveraging advanced AI-driven conversations to engage with leads effectively. Ensure that your outbound efforts are well-coordinated and impactful by utilizing these powerful features.
+
