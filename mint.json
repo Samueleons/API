@@ -1,5 +1,5 @@
 {
-  "$schema": "C:/Users/Samuel/Desktop/Documentation/mintlify/Doc 31-7/api-reference/openapi.json",
+  "$schema": "C:/Users/Samuel/Desktop/Documentation/mintlify/Doc 14-8/api-reference/openapi.json",
   "name": "NLPearl Documentation",
   "logo": {
     "dark": "/logo/logo_favicon.png",
@@ -93,17 +93,9 @@
     {
     "group": "Client",
     "pages": [
-      "api-reference/client/get-credit-balance"
+      "api-reference/client/get-client"
     ]
   },
-    {
-    "group": "Pearl",
-    "pages": [
-      "api-reference/pearl/get-pearls",
-      "api-reference/pearl/get-specific-pearl"
-    ]
-  },
-
   {
     "group": "Inbound",
     "pages": [
@@ -122,37 +114,15 @@
       "api-reference/outbound/set-active-state-for-a-outbound",
       "api-reference/outbound/get-outbound-call-history",
       "api-reference/outbound/get-calls-by-dates-for-a-outbound",
-      "api-reference/outbound/get-outbound-leads",
       "api-reference/outbound/add-a-lead-to-an-outbound",
-      "api-reference/outbound/get-specific-outbound-lead",
-      "api-reference/outbound/set-status-for-a-outbound-lead"
-    ]
-  },
-  {
-    "group": "ClientPhoneNumber",
-    "pages": [
-      "api-reference/clientphonenumber/get-active-phone-numbers"
-    ]
-  },
-
-    {
-    "group": "Invoice",
-    "pages": [
-      "api-reference/invoice/get-all-invoices"
-    ]
-  },
-  {
-    "group": "Voices",
-    "pages": [
-      "api-reference/voices/get-all-voices"
-    ]
-  },
-    {
-    "group": "Status",
-    "pages": [
-      "api-reference/status/get-status"
+      "api-reference/outbound/get-outbound-leads",
+      "api-reference/outbound/get-specific-outbound-lead-and-calls",
+      "api-reference/outbound/request-an-outbound-phone-call-via-api",
+      "api-reference/outbound/retrieve-an-api-call-request",
+      "api-reference/outbound/retrieve-outbound-api-call-requests"
     ]
   }
+
   ],
   "footerSocials": {
     "x": "https://x.com/NLPearlai",
